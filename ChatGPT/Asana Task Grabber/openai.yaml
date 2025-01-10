@@ -1,0 +1,43 @@
+openapi: 3.1.0
+info:
+  title: Asana Marketing Calendar Task Query API
+  description: API to fetch detailed Asana tasks under a specific project.
+  version: 1.0.0
+servers:
+  - url: https://03qbyp2b13.execute-api.us-east-2.amazonaws.com
+paths:
+  /asana_marketingcal:
+    get:
+      operationId: getMarketingCalTasks
+      summary: Retrieve Asana tasks for the marketing calendar.
+      description: Fetch tasks from a specific Asana project.
+      parameters:
+        - name: project_id
+          in: query
+          required: true
+          description: The ID of the Asana project to retrieve tasks from.
+          schema:
+            type: string
+            example: "1223365858489"
+      responses:
+        '200':
+          description: A list of detailed Asana tasks.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                      description: Task name.
+                    assignee:
+                      type: string
+                      description: Task assignee.
+                      nullable: true
+                    due_date:
+                      type: string
+                      format: date
+                      description: Task due date.
+                      nullable: true
