@@ -4,7 +4,7 @@ info:
   description: API to fetch detailed Asana tasks under a specific project.
   version: 1.0.0
 servers:
-  - url: https://03qbyp2b13.execute-api.us-east-2.amazonaws.com
+  - url: AWSSERVERURLHERE
 paths:
   /asana_marketingcal:
     get:
