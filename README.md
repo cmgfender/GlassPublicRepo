@@ -1,6 +1,6 @@
 # GlassPublicRepo
 
-**IF YOU ARE ON THE WEB VERSION, SCROLL DOWN FOR PROJECT DIRECTORIES**
+## **IF YOU ARE ON THE WEB VERSION, SCROLL DOWN FOR PROJECT DIRECTORIES**
 
 Welcome to **GlassPublicRepo**! This repository is a curated collection of scripts, tools, and resources designed to streamline marketing automation, task automation, and media server building. The code spans a variety of programming languages and leverages popular tools to boost efficiency, creativity, and scalability.
 
